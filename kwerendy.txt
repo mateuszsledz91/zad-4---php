@@ -1,0 +1,11 @@
+kw1:
+CREATE TABLE uzytkownicy (id int PRIMARY KEY AUTO_INCREMENT, login varchar(50), haslo varchar(50) )
+
+kw2:
+CREATE USER 'Grzegorz'@'localhost' IDENTIFIED BY 'g'
+
+kw3:
+SELECT login from uzytkownicy
+
+kw4:
+SELECT id, login from uzytkownicy WHERE uzytkownicy.haslo like '4%'
